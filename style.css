@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.balanceInfo {
+  background-color: var(--Soft-red);
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.balancepara {
+  color: var(--Very-pale-orange);
+  font-size: 0.6rem;
+}
+
+.balance {
+  color: var(--Very-pale-orange);
+}
+
+.logo {
+  width: 15%;
+  position: absolute;
+  right: 16px;
+  top: 20px;
+}
+
+.detailedview {
+  margin-top: 1rem;
+  background-color: var(--Very-pale-orange);
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.chartview {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--Cream);
+  margin-bottom: 0.8rem;
+  padding-top: 2rem;
+}
+
+.amount {
+  background-color: var(--Dark-brown);
+  color: var(--Very-pale-orange);
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -25px;
+  left: -5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.chartview div {
+  align-self: flex-end;
+  position: relative;
+  width: 30px;
+  border-radius: 3px;
+  background-color: var(--Soft-red);
+}
+
+.chartview div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.chartview div:hover .amount {
+  opacity: 1;
+}
+
+span.week {
+  color: var(--Medium-brown);
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
+}
+
+.total {
+  color: var(--Medium-brown);
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.percent {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-size: 0.7rem;
+}
+
+.percentage {
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 1rem;
+}
